@@ -72,12 +72,12 @@ const formatDate = (millis, format) => {
 
     const date = new Date(millis);
     const d = {
-        Y: date.getFullYear(),
-        M: date.getMonth() + 1,
-        D: date.getDate(),
-        H: date.getHours(),
-        m: date.getMinutes(),
-        s: date.getSeconds()
+        Y: date.getUTCFullYear(),
+        M: date.getUTCMonth() + 1,
+        D: date.getUTCDate(),
+        H: date.getUTCHours(),
+        m: date.getUTCMinutes(),
+        s: date.getUTCSeconds()
     };
 
     datePatterns.forEach(pattern => {

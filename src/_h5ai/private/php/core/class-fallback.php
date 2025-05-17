@@ -43,7 +43,7 @@ class Fallback {
             $html .= '<td class="fb-i"><img src="' . $fallback_images_href . $type . '.png" alt="' . $type . '"/></td>';
             $html .= '<td class="fb-n"><a href="' . $item->href . '">' . basename($item->path) . '</a></td>';
             $html .= '<td class="fb-d">' . date('Y-m-d H:i', $item->date) . '</td>';
-            $html .= '<td class="fb-s">' . ($item->size !== null ? intval($item->size / 1000) . ' KB' : '' ) . '</td>';
+            $html .= '<td class="fb-s">' . ($item->size !== null ? intval($item->size / 1000) . ' KB' : '') . '</td>';
             $html .= '</tr>';
         }
 
