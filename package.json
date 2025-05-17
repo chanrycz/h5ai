@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "test": "node test",
     "build": "node ghu release",
+    "build-win": ".\\build-win.bat",
     "precommit": "npm run -s lint && npm run -s test"
   },
   "devDependencies": {
