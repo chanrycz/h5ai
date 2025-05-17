@@ -1,0 +1,309 @@
+/*
+	h5a1 Dark Theme by Rafael De Jongh - www.RafaelDeJongh.com
+	Modified by Ryan C. - chanrycz.com
+*/
+#mainrow,
+#topbar,
+#content,
+#view .item,
+#sidebar,
+option {
+	background-color: #1d1f21;
+}
+#tree a,
+#tree a:active,
+#tree a.visited,
+#root,
+#filter input,
+input,
+select,
+option,
+#crumbbar a,
+#crumbbar a:active,
+#crumbbar a:visited,
+#backlink,
+#backlink:active,
+#backlink:visited,
+#content-header,
+#content-footer {
+	color: #e9e9e9;
+}
+#tree a:hover,
+#tree a:active:hover,
+#tree a.visited:hover {
+	color: #fff;
+}
+#view.view-details .item {
+	border-bottom: 1px solid #343638;
+}
+#view .item:hover {
+	background: #343638;
+	color: #fff;
+}
+#view .item,
+a {
+	transition: all 0.3s ease;
+}
+#sidebar {
+	border-right: 3px solid #343638;
+}
+#view.view-icons .landscape {
+	background: #272727;
+}
+#view.view-details .item:hover {
+	box-shadow: unset;
+}
+#pv-content-txt {
+	background: #252525;
+	color: #fff;
+	padding: 15px 20px;
+}
+#pv-content-aud {
+	width: 86%;
+	top: 44.8vh !important;
+	box-shadow: unset;
+}
+.fullscreen #pv-content-aud {
+	top: 47.3vh !important;
+}
+audio {
+	filter: invert(1);
+}
+audio::-webkit-media-controls-panel {
+	color: #fff;
+	background: #d0d0d0;
+}
+audio::-webkit-media-controls-current-time-display {
+	color: #000;
+}
+audio::-webkit-media-controls-time-remaining-display {
+	color: #000;
+}
+
+/* Login */
+#root.info #header a {
+	color: #eee;
+}
+#root.info #login,
+#root.info #logout,
+#root.info #pass {
+	background: #343638;
+}
+#root.info #tests .test {
+	background: #d7d9db;
+	border-radius: 5px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	background-color: #1d1f21;
+}
+::-webkit-scrollbar-corner {
+	background-color: #1d1f21;
+}
+::-webkit-scrollbar-track {
+	background-color: #1d1f21;
+}
+::-webkit-scrollbar-thumb {
+	background: #343638;
+}
+::-webkit-scrollbar:horizontal {
+	height: 12px;
+}
+
+/* Selection */
+::selection {
+	color: #fff;
+	background-color: #bbb;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #bbb;
+}
+
+/* Info Header */
+body.info #header {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+/* Header/Footer README */
+#content-header,
+#content-footer {
+	padding: 16px;
+	font-size: 16px;
+}
+
+#content-header h1,
+#content-footer h1,
+#content-header h2,
+#content-footer h2,
+#content-header h3,
+#content-footer h3,
+#content-header h4,
+#content-footer h4,
+#content-header h5,
+#content-footer h5,
+#content-header h6,
+#content-footer h6,
+#content-header p,
+#content-footer p {
+	margin: 0.5em 0;
+}
+
+#content-header h1,
+#content-footer h1,
+#content-header h2,
+#content-footer h2,
+#content-header h3,
+#content-footer h3,
+#content-header h4,
+#content-footer h4,
+#content-header h5,
+#content-footer h5,
+#content-header h6,
+#content-footer h6 {
+	margin-top: 1.333em;
+	font-family: Metropolis, Inter, sans-serif;
+}
+
+#content-header h2,
+#content-footer h2 {
+	border-bottom: 1px solid #fff;
+}
+
+#content-header a:hover,
+#content-footer a:hover,
+#content-header a:active:hover,
+#content-footer a:active:hover,
+#content-header a:visited:hover,
+#content-footer a:visited:hover {
+	color: #336a96;
+}
+
+/* Brand Logo */
+
+@-webkit-keyframes rainbowBG {
+	0% {
+		border-left-color: #007bff;
+	}
+	10% {
+		border-left-color: #2b1de8;
+	}
+	20% {
+		border-left-color: #dd00f3;
+	}
+	30% {
+		border-left-color: #dd00f3;
+	}
+	40% {
+		border-left-color: #ff2400;
+	}
+	50% {
+		border-left-color: #e81d1d;
+	}
+	60% {
+		border-left-color: #e8b71d;
+	}
+	70% {
+		border-left-color: #e3e81d;
+	}
+	80% {
+		border-left-color: #1de840;
+	}
+	90% {
+		border-left-color: #1ddde8;
+	}
+	100% {
+		border-left-color: #007bff;
+	}
+}
+
+@keyframes rainbowBG {
+	0% {
+		border-left-color: #007bff;
+	}
+	10% {
+		border-left-color: #2b1de8;
+	}
+	20% {
+		border-left-color: #dd00f3;
+	}
+	30% {
+		border-left-color: #dd00f3;
+	}
+	40% {
+		border-left-color: #ff2400;
+	}
+	50% {
+		border-left-color: #e81d1d;
+	}
+	60% {
+		border-left-color: #e8b71d;
+	}
+	70% {
+		border-left-color: #e3e81d;
+	}
+	80% {
+		border-left-color: #1de840;
+	}
+	90% {
+		border-left-color: #1ddde8;
+	}
+	100% {
+		border-left-color: #007bff;
+	}
+}
+
+#content-header .navbar-brand,
+#content-footer .navbar-brand {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: safe center;
+	align-items: safe center;
+	width: 100%;
+	font-size: 23px;
+	text-decoration: none;
+	white-space: nowrap;
+	margin-bottom: 23px;
+}
+
+#content-header .navbar-brand .brand-logo,
+#content-footer .navbar-brand .brand-logo {
+	color: #ffffff;
+	padding: 5px 0 5px 10px;
+	border-left-width: 3.5px;
+	border-left-style: solid;
+	margin: 0 auto;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	border-left-color: #007bff;
+	-webkit-animation: rainbowBG 30s linear 4s infinite;
+	animation: rainbowBG 30s linear 4s infinite;
+	font-family: Metropolis, Inter, sans-serif;
+}
+
+#content-header .navbar-brand .brand-logo .brand-name,
+#content-footer .navbar-brand .brand-logo .brand-name {
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 1;
+	font-weight: 700;
+	font-family: Metropolis, Inter, sans-serif;
+}
+
+#content-header .navbar-brand .brand-logo .service-name,
+#content-footer .navbar-brand .brand-logo .service-name {
+	margin: 0;
+	font-size: 1.1em;
+	line-height: 1;
+	font-family: Metropolis, Inter, sans-serif;
+	font-weight: 500;
+}

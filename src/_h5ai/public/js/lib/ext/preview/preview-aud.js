@@ -18,7 +18,7 @@ const updateGui = () => {
 
     preview.setLabels([
         preview.item.label,
-        format.formatDate(el.duration * 1000, 'm:ss')
+        format.formatDate(el.duration * 1000, 'mm:ss', true)
     ]);
 };
 

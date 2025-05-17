@@ -63,7 +63,7 @@ const formatNumber = (number, padding) => {
     return str;
 };
 
-const formatDate = (millis, format) => {
+const formatDate = (millis, format, utc = false) => {
     if (!millis || !isNum(millis)) {
         return '';
     }
@@ -72,12 +72,12 @@ const formatDate = (millis, format) => {
 
     const date = new Date(millis);
     const d = {
-        Y: date.getFullYear(),
-        M: date.getMonth() + 1,
-        D: date.getDate(),
-        H: date.getHours(),
-        m: date.getMinutes(),
-        s: date.getSeconds()
+        Y: utc ? date.getUTCFullYear() : date.getFullYear(),
+        M: utc ? date.getUTCMonth() + 1 : date.getMonth() + 1,
+        D: utc ? date.getUTCDate() : date.getDate(),
+        H: utc ? date.getUTCHours() : date.getHours(),
+        m: utc ? date.getUTCMinutes() : date.getMinutes(),
+        s: utc ? date.getUTCSeconds() : date.getSeconds()
     };
 
     datePatterns.forEach(pattern => {
